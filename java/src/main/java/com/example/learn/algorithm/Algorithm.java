@@ -1,5 +1,8 @@
 package com.example.learn.algorithm;
 
+import org.springframework.web.bind.annotation.RestController;
+import org.testng.annotations.Test;
+
 import java.util.List;
 
 public class Algorithm {
@@ -74,8 +77,23 @@ public class Algorithm {
 
     /*
     a=“ab” b="abfafab"  写一个算法，找出b字符串中有多少个a字符串
+    1、先判断b串中是否包含a字符串
+    2、如果包含，则重新赋值b字符串，新的b字符串从a字符串出现位置+a的长度开始
+    3、用到String方法为contains（包含），indexOf（字符串出现位置）
      */
-    public int test11(){
-        return 1;
+    public int test11(String a_str,String b_str){
+        int sum=0;
+        while (b_str.contains(a_str)){
+            sum++;
+            b_str = b_str.substring(b_str.indexOf(a_str)+a_str.length());
+            System.out.println(b_str);
+        }
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        Algorithm algorithm = new Algorithm();
+        System.out.println(algorithm.test11("ab","abfafab"));
+//        algorithm.test11("ab","abfafab");
     }
 }
