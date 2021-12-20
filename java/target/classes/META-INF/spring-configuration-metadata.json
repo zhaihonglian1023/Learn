@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "toc",
+      "type": "com.example.learn.entity.UserProperties",
+      "sourceType": "com.example.learn.entity.UserProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "toc.name1",
+      "type": "java.lang.String",
+      "sourceType": "com.example.learn.entity.UserProperties"
+    },
+    {
+      "name": "toc.note",
+      "type": "java.lang.String",
+      "sourceType": "com.example.learn.entity.UserProperties"
+    }
+  ],
+  "hints": []
+}
