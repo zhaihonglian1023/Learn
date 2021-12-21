@@ -70,8 +70,9 @@ public class Algorithm {
 
     /*
     给一个字符串，带有空格，非空格字符反转，空格不反转，输出
+    a=" sbg jid ook "
      */
-    public String test10(){
+    public String test10(String str){
         return null;
     }
 
@@ -94,6 +95,5 @@ public class Algorithm {
     public static void main(String[] args) {
         Algorithm algorithm = new Algorithm();
         System.out.println(algorithm.test11("ab","abfafab"));
-//        algorithm.test11("ab","abfafab");
     }
 }
