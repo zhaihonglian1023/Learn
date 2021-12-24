@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Iterator;
 
 public class CollectionTest {
 
@@ -88,5 +89,25 @@ public class CollectionTest {
         collection1.add(123);
         collection1.add(456);
         System.out.println(collection.equals(collection1));
+    }
+    @Test
+    public void test7(){
+        Collection<Object> collection = new ArrayList<Object>(10);
+        collection.add(123);
+        collection.add(456);
+        System.out.println(collection.hashCode());
+    }
+    @Test
+    public void test8(){
+        Collection<Object> collection = new ArrayList<Object>(10);
+        collection.add(123);
+        collection.add(456);
+        collection.add("hello");
+        collection.add("world");
+        collection.add("good");
+        Iterator<Object> iterator = collection.iterator();
+        while(iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
     }
 }
