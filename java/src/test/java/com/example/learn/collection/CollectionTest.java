@@ -11,7 +11,7 @@ public class CollectionTest {
 
     @Test
     public void test1(){
-        //单个元素添加
+        //单个元素添加-add
         Collection<Object> collection = new ArrayList<Object>(10);
         collection.add(123);
         collection.add(456);
@@ -22,7 +22,7 @@ public class CollectionTest {
     }
     @Test
     public void test2(){
-        //添加多个元素
+        //添加多个元素-addAll
         Collection<Object> collection = new ArrayList<Object>(10);
         Collection<Object> collection1 = new ArrayList<Object>(10);
         collection1.add(123);
@@ -33,7 +33,7 @@ public class CollectionTest {
     }
     @Test
     public void test3(){
-        //返回一个数组包含集合中的所有元素
+        //返回一个数组包含集合中的所有元素-toArray
         Collection<Object> collection = new ArrayList<Object>(10);
         collection.add(123);
         collection.add(456);
@@ -47,7 +47,7 @@ public class CollectionTest {
     }
     @Test
     public void test4(){
-        //清空集合
+        //清空集合-clear
         Collection<Object> collection = new ArrayList<Object>(10);
         collection.add(123);
         collection.add(456);
@@ -65,17 +65,28 @@ public class CollectionTest {
         collection.add(new HelloWorldEntity("jerry","hello"));
         collection.add("tom");
         collection.add("hello");
-        //包含元素
+        //包含元素-contains
         System.out.println(collection.contains(123));
         Collection<Object> collection1 = new ArrayList<Object>(10);
         collection1.add(123);
         collection1.add(456);
-        //包含元素集合-返回true
+        //包含元素集合-返回true-containsAll
         System.out.println(collection.containsAll(collection1));
         Collection<Object> collection2 = new ArrayList<Object>(10);
         collection2.add(123);
         collection2.add("hhh");
-        //包含元素集合-返回false
+        //包含元素集合-返回false-containsAll
         System.out.println(collection.containsAll(collection2));
+    }
+    @Test
+    public void test6(){
+        //集合比较
+        Collection<Object> collection = new ArrayList<Object>(10);
+        collection.add(123);
+        collection.add(456);
+        Collection<Object> collection1 = new ArrayList<Object>(10);
+        collection1.add(123);
+        collection1.add(456);
+        System.out.println(collection.equals(collection1));
     }
 }
