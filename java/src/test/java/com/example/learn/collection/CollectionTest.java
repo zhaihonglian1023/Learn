@@ -92,6 +92,7 @@ public class CollectionTest {
     }
     @Test
     public void test7(){
+        //输出hash值
         Collection<Object> collection = new ArrayList<Object>(10);
         collection.add(123);
         collection.add(456);
@@ -99,6 +100,7 @@ public class CollectionTest {
     }
     @Test
     public void test8(){
+        //迭代器
         Collection<Object> collection = new ArrayList<Object>(10);
         collection.add(123);
         collection.add(456);
