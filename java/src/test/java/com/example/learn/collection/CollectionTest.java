@@ -57,4 +57,25 @@ public class CollectionTest {
         collection.clear();
         System.out.println(collection);
     }
+    @Test
+    public void test5(){
+        Collection<Object> collection = new ArrayList<Object>(10);
+        collection.add(123);
+        collection.add(456);
+        collection.add(new HelloWorldEntity("jerry","hello"));
+        collection.add("tom");
+        collection.add("hello");
+        //包含元素
+        System.out.println(collection.contains(123));
+        Collection<Object> collection1 = new ArrayList<Object>(10);
+        collection1.add(123);
+        collection1.add(456);
+        //包含元素集合-返回true
+        System.out.println(collection.containsAll(collection1));
+        Collection<Object> collection2 = new ArrayList<Object>(10);
+        collection2.add(123);
+        collection2.add("hhh");
+        //包含元素集合-返回false
+        System.out.println(collection.containsAll(collection2));
+    }
 }
