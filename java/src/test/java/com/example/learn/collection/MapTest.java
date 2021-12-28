@@ -16,5 +16,6 @@ public class MapTest {
         map.forEach((key,value)->{
             System.out.println(key+":"+value);
         });
+        System.out.println(map.size());
     }
 }
