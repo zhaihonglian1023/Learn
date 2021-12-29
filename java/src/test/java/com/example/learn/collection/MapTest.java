@@ -3,6 +3,7 @@ package com.example.learn.collection;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 public class MapTest {
@@ -16,6 +17,11 @@ public class MapTest {
         map.forEach((key,value)->{
             System.out.println(key+":"+value);
         });
-        System.out.println(map.size());
+        System.out.println("size:"+map.size());
+        System.out.println("-------------------");
+        Iterator<Object> iterator = map.values().iterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
     }
 }
