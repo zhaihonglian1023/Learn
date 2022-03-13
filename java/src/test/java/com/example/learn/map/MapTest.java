@@ -1,4 +1,4 @@
-package com.example.learn.collection;
+package com.example.learn.map;
 
 import org.testng.annotations.Test;
 import java.util.HashMap;

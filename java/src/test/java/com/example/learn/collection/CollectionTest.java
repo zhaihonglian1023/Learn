@@ -8,6 +8,14 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
 
+/**
+ * Collection接口：单列集合，用来存储一个一个对象
+ * ——list接口，存储有序的，可重复的数据，-》动态数组
+ *      ArrayList、LinkedList、Vector
+ * ——set接口，存储无序的，不可重复的数据，
+ *      HashSet、LinkedHashSet、TreeSet
+ */
+
 public class CollectionTest {
 
     @Test

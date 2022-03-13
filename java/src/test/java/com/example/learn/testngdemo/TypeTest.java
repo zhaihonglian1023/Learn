@@ -2,6 +2,8 @@ package com.example.learn.testngdemo;
 
 import org.testng.annotations.Test;
 
+import java.util.Scanner;
+
 public class TypeTest {
     @Test
     public void test1(){
