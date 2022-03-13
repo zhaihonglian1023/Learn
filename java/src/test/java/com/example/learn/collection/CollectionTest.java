@@ -117,7 +117,30 @@ public class CollectionTest {
         collection.add("good");
         Iterator<Object> iterator = collection.iterator();
         while(iterator.hasNext()){
-            System.out.println(iterator.next());
+            System.out.println("iterator:"+iterator.next());
         }
+        Iterator<Object> iterator1 = collection.iterator();
+        while(iterator1.hasNext()){
+            Object object = iterator1.next();
+            if("hello".equals(object)){
+                iterator1.remove();
+            }
+        }
+        System.out.println("collection:"+collection);
+    }
+    @Test
+    public void test9(){
+        //移除
+        Collection<Object> collection = new ArrayList<Object>(10);
+        collection.add(123);
+        collection.add(456);
+        collection.add("hello");
+        collection.add("world");
+        collection.add("good");
+        collection.remove(123);
+        System.out.println(collection);
+        Collection<String> collection1 = Arrays.asList("hello","world");
+        collection.removeAll(collection1);
+        System.out.println(collection);
     }
 }

@@ -5,6 +5,11 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+/**
+ * Map接口：双列集合，用来存储一对（key-value）一对的数据
+ *      HashMap,LinkedMap,TreeMap,HashTable,Properties
+ */
+
 public class MapTest {
 
     @Test
