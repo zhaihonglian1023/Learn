@@ -24,6 +24,7 @@ import java.util.*;
  *      jdk7：元素a放在数组中，指向原来的元素
  *      jdk8：原来的元素在数组中，指向元素a
  *      总结：七上八下
+ *      HashSet底层：数组+链表
  */
 
 public class SetTest {
