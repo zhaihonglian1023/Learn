@@ -83,4 +83,15 @@ public class ListTest {
         }
         System.out.println(list);
     }
+    @Test
+    public void test4(){
+        String [] str={"bdhsj","hfkdsh","kkk"};
+        for (String s:str) {
+            int length = s.length();
+            for(int i=0;i<length;i++){
+                System.out.println(s.charAt(i));
+            }
+            System.out.println("s:"+s);
+        }
+    }
 }
