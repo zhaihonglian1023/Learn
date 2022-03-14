@@ -44,6 +44,15 @@ import java.util.*;
  *
  * 相同点：三个类都实现了List接口，存储数据的特点相同：存储有序的，可重复的数据
  * 不同点：如上
+ *
+ * 总结：常用方法
+ * 增：add(Object obj)
+ * 删：remove(int index)/remove(Object obj)
+ * 改：set(int index, Object ele)
+ * 查：get(int index)
+ * 插：add(int index, Object ele)
+ * 长度：size()
+ * 遍历：Iterator迭代器、增强for循环（foreach）、普通循环
  */
 
 public class ListTest {
