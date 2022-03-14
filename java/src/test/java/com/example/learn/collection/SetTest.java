@@ -1,5 +1,6 @@
 package com.example.learn.collection;
 
+import com.example.learn.entity.HelloWorldEntity;
 import org.testng.annotations.Test;
 
 import java.util.*;
@@ -58,6 +59,13 @@ public class SetTest {
         set.add("hello");
         set.add("world");
         set.add(345);
+        System.out.println(set);
+    }
+    @Test
+    public void test4(){
+        Set<Object> set = new HashSet<>();
+        set.add(new HelloWorldEntity("tom","smile"));
+        set.add(new HelloWorldEntity("tom","smile"));
         System.out.println(set);
     }
 }
