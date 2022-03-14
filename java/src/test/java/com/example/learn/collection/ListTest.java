@@ -71,6 +71,8 @@ public class ListTest {
         System.out.println("列表长度:"+list.size());
         System.out.println(list.indexOf("hello"));
         System.out.println(list.lastIndexOf("hello"));
+        list.remove(new Integer(123));
+        System.out.println(list);
     }
     @Test
     public void test2(){
